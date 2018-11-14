@@ -1,7 +1,7 @@
 # HelloJava
 Java Programming Samples
 
-Here's some coding examples in relation to a specific learning outcome for Diploma level Object Oriented Programming assessment.
+Here's some coding examples in relation to a specific learning outcome for a Tertiary Diploma level Object Oriented Programming assessment.
 
 An excerpt from the assessment scenario guidelines:
 
