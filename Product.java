@@ -1,24 +1,24 @@
 package assessment;
 
-import java.text.DecimalFormat;													// import jdk text Decimal Format module
-																				// this is the {abstract} class 'Product'
-public abstract class Product {													// it is the parent class of all 'Product' derived classes
-	protected String brand;														// declare protected attributes
+import java.text.DecimalFormat;													
+																				
+public abstract class Product {													
+	protected String brand;														
 	protected String desc;
 	protected double weight;
 	protected double price;
 	protected int quantity;
 
-	public Product() {															// default constructor
-		this.brand = null;														// assign default values
+	public Product() {															
+		this.brand = null;														
 		this.desc = null;
 		this.weight = 0;
 		this.price = 0;
 		this.quantity = 0;
 	}
 
-	public Product(String brand, String desc, double weight, double price,		// full constructor
-		int quantity) {															// handle parameters
+	public Product(String brand, String desc, double weight, double price,		
+		int quantity) {															
 		this.brand = brand;
 		this.desc = desc;
 		this.weight = weight;
@@ -26,10 +26,10 @@ public abstract class Product {													// it is the parent class of all 'Pr
 		this.quantity = quantity;
 	}
 
-	public DecimalFormat df1 = new DecimalFormat("#.###");						// instantiate a DecimalFormat object for use in toString()
-	public DecimalFormat df2 = new DecimalFormat("#.##");						// *
+	public DecimalFormat df1 = new DecimalFormat("#.###");						
+	public DecimalFormat df2 = new DecimalFormat("#.##");						
 	
-	public void setBrand(String brand) {										// set methods start here
+	public void setBrand(String brand) {										
 		this.brand = brand;
 	}
 
@@ -47,9 +47,9 @@ public abstract class Product {													// it is the parent class of all 'Pr
 
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
-	}																			// set methods end here
+	}																			
 
-	public String getBrand() {													// get methods start here
+	public String getBrand() {													
 		return brand;
 	}
 
@@ -67,10 +67,10 @@ public abstract class Product {													// it is the parent class of all 'Pr
 
 	public int getQuantity() {
 		return quantity;
-	}																			// get methods end here
+	}																			
 
-	@Override																	// auto-generated
-	public String toString() {													// toString() method override
+	@Override																	
+	public String toString() {													
 		return "Brand Name: " + brand + " \n" + "Description: " + desc + " \n" + "Item Weight: " + df1.format(weight)
 		+ "kg \n" + "Item Price: $" + df2.format(price) + " \n" + "Quantity In Stock: " + quantity + " \n"
 		+ "------------------------------------------ \n\n";
